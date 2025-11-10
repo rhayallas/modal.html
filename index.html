@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>Utilizando seleção</head>
+<body>
+    <p class="texto">Parágrafo 1</p>
+    <p class="texto">Parágrafo 2</p>
+    <p class="texto">Parágrafo 3</p>
+    <p class="texto">Parágrafo 4</p>
+    <button onclick="executar()">OK</button>
+
+    <script>
+        function executar(){
+            const texto = document.getElementsByClassName("texto");
+            Array.from(texto).forEach(item => item.textContent = "alterado");
+        }
+    </script>
+</body>
+</html>
+# modal.html
